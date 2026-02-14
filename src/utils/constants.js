@@ -1,6 +1,7 @@
 // src/utils/constants.js
 
-export const API_BASE_URL = 'http://localhost:8000/api/v1'; // Ajusta si tu API corre en otro puerto
+// src/utils/constants.js
+export const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1";
 
 export const TARIFF_OPTIONS = [
     { value: 'residencial', label: 'Residencial (3-10 kWp)' },
